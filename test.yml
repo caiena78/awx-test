@@ -1,6 +1,6 @@
 ---
 - name: TEST From AWX   
-  hosts: all
+  hosts: networksw
   tasks: 
    - name: TEST From AWX
      cisco.ios.ios_config:
