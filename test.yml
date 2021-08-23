@@ -1,7 +1,7 @@
 ---
 - name: set ACL via CLI  
-  tasks:
   host: " {{ group_tag}}"
+  tasks: 
    - name: TEST From AWX
      cisco.ios.ios_config:
       lines:  
