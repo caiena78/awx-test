@@ -1,0 +1,10 @@
+---
+- name: set ACL via CLI
+  hosts: lab
+  tasks:
+   - name: Lab Tube Station
+     cisco.ios.ios_config:
+      lines:  
+      - desc TEST FROM AWX
+      parents: ['interface GigabitEthernet1/0/10']
+      save_when: modified 
