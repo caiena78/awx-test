@@ -20,5 +20,5 @@
      register: output     
    
    - debug:
-        var: output.stdout[0]
+        var: output.stdout
    
