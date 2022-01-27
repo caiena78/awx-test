@@ -1,6 +1,6 @@
 ---
 - name: Search for Mac address
-  hosts: networksw
+  hosts: test
   vars_prompt:
     
     - name : mac
