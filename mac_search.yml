@@ -14,9 +14,7 @@
    - name: Show interface 
      cisco.ios.ios_command: 
       commands: 
-      - show int {{interface[0]}} | inc line protocol
-      - show int {{interface[0]}} | inc media
-      - show int {{interface[0]}} | inc error
+      - show int {{interface[0]}}      
      register: output     
    
    - debug:
