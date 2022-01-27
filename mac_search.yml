@@ -1,7 +1,7 @@
 ---
 - name: Search for Mac address
   hosts: networksw
-  
+  gather_facts: no
   tasks:
    - name: Search For Mac
      cisco.ios.ios_command: 
