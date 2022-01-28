@@ -16,6 +16,7 @@
       commands: 
       - show int {{interface[0]}}      
      register: output     
+  
    - debug:
         var: output   
 
