@@ -18,7 +18,7 @@
      register: output     
    
    - set_fact:
-      status:  {{output.stdout[0] | regex_findall('line protocol is.+(.+)^')}}
+      status:  "{output.stdout[0] | regex_findall('line protocol is.+(.+)^')}}"
 
 
    - debug:
