@@ -16,12 +16,7 @@
       commands: 
       - show int {{interface[0]}}      
      register: output     
-   
-   - set_fact:
-      status:  "{{output.stdout[0] | regex_findall('line protocol is.+(.+)^')}}"
-
-
    - debug:
-        var: status
+        var: output   
 
    
