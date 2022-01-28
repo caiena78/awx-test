@@ -18,5 +18,5 @@
      register: output     
    
    - debug:
-        var: output.stdout[0].split('\n')
+        var: output.stdout[0].splitlines()
    
